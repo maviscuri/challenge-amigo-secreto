@@ -3,7 +3,9 @@
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
+    --color-button2: #008f39;
     --color-button-hover: #e55720;
+    --color-button-hover2: #2d572c;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -32,7 +34,7 @@ body {
 
 /* Banner */
 .header-banner {
-    flex: 40%;
+    flex: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,8 +90,10 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    display: flex;
+    width: 400px;
+    justify-content: center;   
+    gap: 20px;
 }
 
 /* Estilos de entrada de texto */
@@ -146,17 +150,34 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    gap: 2px;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 10px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
 }
+.button-draw2 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    padding: 10px 10px;
+    color: var(--color-white);
+    background-color: var(--color-button2);
+    font-size: 16px;
+}
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 20px;
+}
+.button-draw2 img {
+    margin-right: 20px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+.button-draw2:hover {
+    background-color: var(--color-button-hover2);
 }
